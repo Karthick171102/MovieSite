@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Stylesheet-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!--Title of the project-->
+
+    <title>Project 1</title>
+    <!--Icons-->
+    <script src="https://kit.fontawesome.com/323c5b2387.js" crossorigin="anonymous"></script>
+    
+    <!--Fav-icon-->
+    <link rel="shortcut icon" href="images/favi.png" type="image/x-icon">
+
+    <!--Slider JS Files-->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    
+    <!--Style-------------------------------------------------------------------------------------------->
+
+    <style>
+        .nanban{
+            padding-left: 30px;
+            padding-top: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+
+        <div class="showcase"></div>
+        <!--Logo-->
+
+        <a href="#" class="logo">
+            <img src="images/p01.png" alt="logo">
+        </a>
+
+        <!--Menu-->
+
+        <ul class="menu">
+            <li><a href="project1.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Live Channels</a></li>
+            <li><a href="#">Music</a></li>
+           
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search here...">
+          <i class="fas fa-search"></i>
+        </div>
+    </nav>
+      
+    <iframe class="nanban"
+    width="1000" 
+    height="562.72" 
+    src="https://www.youtube.com/embed/_5hTXQWLrGI" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+
+    <!--Other movies-->
+
+    <section id="latest">
+        <h2 class="latest-heading">RANDOM PICKS</h2>
+        <!--slider------------------->
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------------------>
+            <li class="item-a">
+                <div class="latest-box">
+                    <!--img-------->
+                    <div class="latest-b-img">
+                        <img src="images/freeguy.png">
+                    </div>
+                    <!--text---------->
+                    <div class="latest-b-text">
+                        <strong>Free Guy</strong>
+                        <p>Comedy<br>IMDB 8.9/10
+                        </p>
+                    </div>
+                </div>
+            </li>
+    <!--slide-box-2------------------>
+    <li class="item-b">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+               <a href="mmaster.html"> <img src="images/master.jpg"></a>
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Master</strong>
+                <p>Action<br>IMDB 8.9/10</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-3------------------>
+    <li class="item-c">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/ohmanapenne.png">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Oh Manapenne!</strong>
+                <p>Romance<br>IMDB 8.1/10</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-4------------------>
+    <li class="item-d">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/sulthan.png">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Sulthan</strong>
+                <p>Action<br>IMDB 7.2/10</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-5------------------>
+    <li class="item-e">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/sarileru.png">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Sarileru Neekevaru</strong>
+                <p>Action<br>IMDB 7.9/10</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-6------------------>
+    <li class="item-f">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/lift.png">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>lift</strong>
+                <p>Thriller<br>IMDB 9.1/10</p>
+            </div>
+        </div>
+    </li>
+    <!--slide-box-7------------------>
+    <li class="item-g">
+        <div class="latest-box">
+            <!--img-------->
+            <div class="latest-b-img">
+                <img src="images/geethagov.png">
+            </div>
+            <!--text---------->
+            <div class="latest-b-text">
+                <strong>Geetha Govindam</strong>
+                <p>Romance<br>IMDB 8.0/10</p>
+            </div>
+        </div>
+    </li>
+          </ul>
+    </section>
+
+      <!--Slider Script-->
+
+      <script>
+              $(document).ready(function() {
+        $('#autoWidth,#autoWidth2').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+            } 
+        });  
+      });
+      </script>
+</body>
+</html>
